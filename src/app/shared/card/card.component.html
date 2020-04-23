@@ -1,0 +1,11 @@
+<ion-card>
+  <img [src]="(!!dish.images) ? dish.images[0] : '../assets/images/placeholder.png'" />
+  <ion-card-header>
+<!--    <ion-card-subtitle>Destination</ion-card-subtitle>-->
+    <ion-card-title>{{ dish.name }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>{{ dish.ingredients.length }} интгредиентов</p>
+    <p>{{ dish.cookingTime }}</p>
+  </ion-card-content>
+</ion-card>
