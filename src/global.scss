@@ -15,5 +15,6 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 #content {
-  padding: 1.5rem 1rem ;
+  padding: 1.5rem 1rem;
+  overflow: scroll;
 }
