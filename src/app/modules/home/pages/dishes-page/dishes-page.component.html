@@ -1,5 +1,6 @@
 <div id="content">
-  <div *ngFor="let item of dishes">
-    {{ item | json }}
-  </div>
+<!--  <div *ngFor="let item of dishes">-->
+<!--    {{ item | json }}-->
+<!--  </div>-->
+  <app-card *ngFor="let item of dishes" [dish]="item"></app-card>
 </div>
