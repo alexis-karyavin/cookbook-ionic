@@ -1,3 +1,5 @@
 <div id="content">
-  Здесь будут все продукты
+  <div *ngFor="let item of dishes">
+    {{ item | json }}
+  </div>
 </div>
