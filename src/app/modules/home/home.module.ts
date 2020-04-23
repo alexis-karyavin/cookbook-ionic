@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import {StartPageComponent} from '../start-page/start-page.component';
 import {DishesPageComponent} from './pages/dishes-page/dishes-page.component';
+import {SharedModule} from '../../shared/shared.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import {DishesPageComponent} from './pages/dishes-page/dishes-page.component';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
+    SharedModule,
   ],
   declarations: [
     HomePage,
