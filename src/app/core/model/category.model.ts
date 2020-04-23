@@ -1,7 +1,19 @@
-import {DishModel} from './dish.model';
+import {AdapterDish, DishModel} from './dish.model';
 
 export class CategoryModel {
-  public categoryName: string;
+  public name: string;
   public url: string;
-  public dishes: DishModel[];
+  public dishes: DishModel[] = [];
+}
+
+export class AdapterCategory {
+  public static adapt(res) {
+    const category = new CategoryModel();
+    category.name = res.categoryName;
+    category.url = res.url;
+    res.dishes.forEach(item => {
+      category.dishes.push(AdapterDish.adapt(item));
+    });
+    return category;
+  }
 }
