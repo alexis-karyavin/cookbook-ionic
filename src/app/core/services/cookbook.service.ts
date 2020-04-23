@@ -4,7 +4,7 @@ import data from '../../../assets/data/data.json';
 @Injectable({
   providedIn: 'root'
 })
-export class DishesService {
+export class CookbookService {
   private data = data;
   constructor() { }
 
