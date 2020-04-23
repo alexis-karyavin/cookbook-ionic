@@ -1,7 +1,7 @@
 [
   {
     "categoryName": "Супы",
-    "url": "soup/",
+    "url": "soup",
     "dishes": [
       {
         "dishName": "Борщ",
