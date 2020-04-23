@@ -6,6 +6,8 @@
       {
         "dishName": "Борщ",
         "url": "borch",
+        "images": null,
+        "cookingTime": "1 ч. 30 мин.",
         "ingredients": [
           {
             "ingredientName": "Свекла",
@@ -29,6 +31,8 @@
       {
         "dishName": "Сырный суп по‑французски с курицей",
         "url": "cheese-soup",
+        "images": null,
+        "cookingTime": "2 ч. 30 мин.",
         "ingredients": [
           {
             "ingredientName": "Куриное филе",
