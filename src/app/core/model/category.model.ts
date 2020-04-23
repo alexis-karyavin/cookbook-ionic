@@ -11,9 +11,11 @@ export class AdapterCategory {
     const category = new CategoryModel();
     category.name = res.categoryName;
     category.url = res.url;
-    res.dishes.forEach(item => {
-      category.dishes.push(AdapterDish.adapt(item));
-    });
+    if ( !!res.dishes ) {
+      res.dishes.forEach(item => {
+        category.dishes.push(AdapterDish.adapt(item));
+      });
+    }
     return category;
   }
 }
