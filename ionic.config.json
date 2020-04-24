@@ -1,5 +1,7 @@
 {
   "name": "cookbook-ionic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
