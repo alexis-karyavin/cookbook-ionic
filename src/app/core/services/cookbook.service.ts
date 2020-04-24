@@ -20,9 +20,6 @@ export class CookbookService {
   public getCategories(): CategoryModel[] {
     return this.categories;
   }
-  // public getCategory(name: string): CategoryModel {
-  //   return new CategoryModel();
-  // }
   public getDishesAll(): DishModel[] {
     const dishes = [];
     this.categories.forEach(category => {
@@ -35,5 +32,16 @@ export class CookbookService {
       return item.url === categoryName;
     });
     return category.dishes;
+  }
+  public getDish(dishName: string): DishModel {
+    let dish: DishModel;
+    this.categories.forEach(category => {
+      category.dishes.forEach(item => {
+        if ( item.url === dishName ) {
+          dish = item;
+        }
+      });
+    });
+    return dish;
   }
 }

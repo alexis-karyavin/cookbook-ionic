@@ -1,3 +1,20 @@
-<p>
-  about-dish-page works!
-</p>
+<div id="content">
+  <h1> {{ dish.name }} </h1>
+  <img *ngIf="!!dish.images" [src]="'../assets/images/dishes/' + dish.images[0]">
+  <h5>Время приготовления: {{ dish.cookingTime }}</h5>
+  <div class="container-ingridients">
+    <ul>
+      <li *ngFor="let item of dish.ingredients">
+        {{ item.ingredientName }} - {{ item.count }}
+      </li>
+    </ul>
+  </div>
+  <div class="instruction">
+    <h5>Инструкция</h5>
+    <ol>
+      <li *ngFor="let item of dish.cookingMethod">
+        {{ item }}
+      </li>
+    </ol>
+  </div>
+</div>

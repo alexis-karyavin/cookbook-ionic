@@ -1,5 +1,5 @@
 <ion-card>
-  <img [src]="(!!dish.images) ? dish.images[0] : '../assets/images/placeholder.png'" />
+  <img [src]="(!!dish.images) ? '../assets/images/dishes/' + dish.images : '../assets/images/placeholder.png'" />
   <ion-card-header>
     <ion-card-title>{{ dish.name }}</ion-card-title>
   </ion-card-header>
