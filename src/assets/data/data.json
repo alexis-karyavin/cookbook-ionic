@@ -6,7 +6,7 @@
       {
         "dishName": "Борщ",
         "url": "borch",
-        "images": null,
+        "images": ["borch.jpg"],
         "cookingTime": "1 ч. 30 мин.",
         "ingredients": [
           {
@@ -31,7 +31,7 @@
       {
         "dishName": "Сырный суп по‑французски с курицей",
         "url": "cheese-soup",
-        "images": null,
+        "images": ["cheese-soup.jpg"],
         "cookingTime": "2 ч. 30 мин.",
         "ingredients": [
           {
@@ -65,7 +65,7 @@
       {
         "dishName": "Шведский десерт без выпечки (Chokladbollar)",
         "url": "сhokladbollar",
-        "images": null,
+        "images": ["сhokladbollar.jpg"],
         "cookingTime": "2 ч. 30 мин.",
         "ingredients": [
           {
