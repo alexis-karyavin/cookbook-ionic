@@ -14,11 +14,10 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
-        path: '',
+        path: ':id',
         component: DishesPageComponent
       }
     ]
-    // loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
   }
 ];
 
