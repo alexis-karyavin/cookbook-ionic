@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import {StartPageComponent} from '../start-page/start-page.component';
 import {DishesPageComponent} from './pages/dishes-page/dishes-page.component';
 import {SharedModule} from '../../shared/shared.module';
+import {AboutDishPageComponent} from './pages/about-dish-page/about-dish-page.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import {SharedModule} from '../../shared/shared.module';
   declarations: [
     HomePage,
     StartPageComponent,
-    DishesPageComponent
+    DishesPageComponent,
+    AboutDishPageComponent
   ]
 })
 export class HomePageModule {}

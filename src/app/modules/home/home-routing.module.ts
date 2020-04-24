@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
 import {StartPageComponent} from '../start-page/start-page.component';
 import {DishesPageComponent} from './pages/dishes-page/dishes-page.component';
+import {AboutDishPageComponent} from "./pages/about-dish-page/about-dish-page.component";
 
 const routes: Routes = [
   {
@@ -14,11 +15,15 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
-        path: ':id',
+        path: ':category',
         component: DishesPageComponent
+      },
+      {
+        path: ':category/:id',
+        component: AboutDishPageComponent
       }
     ]
-  }
+  },
 ];
 
 @NgModule({

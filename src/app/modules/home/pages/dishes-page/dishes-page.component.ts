@@ -16,7 +16,7 @@ export class DishesPageComponent implements OnInit {
   public dishes: DishModel[];
   ngOnInit() {
     this.route.params.subscribe(res => {
-      this.paramUrl = (res.id);
+      this.paramUrl = (res.category);
     });
     if (this.paramUrl === 'all') {
       this.dishes = this.cookbookService.getDishesAll();
