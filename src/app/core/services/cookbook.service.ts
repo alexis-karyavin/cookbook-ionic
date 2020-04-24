@@ -15,19 +15,25 @@ export class CookbookService {
     data.forEach(item => {
       this.categories.push(AdapterCategory.adapt(item));
     });
-    this.getDishes()
+    this.getDishesAll();
   }
   public getCategories(): CategoryModel[] {
     return this.categories;
   }
-  public getCategory(name: string): CategoryModel {
-    return new CategoryModel();
-  }
-  public getDishes(): DishModel[] {
+  // public getCategory(name: string): CategoryModel {
+  //   return new CategoryModel();
+  // }
+  public getDishesAll(): DishModel[] {
     const dishes = [];
     this.categories.forEach(category => {
      category.dishes.forEach(dish => dishes.push(dish));
     });
     return dishes;
+  }
+  public getDishes(categoryName: string) {
+    const category = this.categories.find(item => {
+      return item.url === categoryName;
+    });
+    return category.dishes;
   }
 }
